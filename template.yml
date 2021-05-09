@@ -1,0 +1,7 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'AWS CloudFormation Sample Template to SNS Topic'
+Resources:
+  SNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+        TopicName: !Sub inyprej-sns-${AWS::Region}
