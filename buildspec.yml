@@ -1,0 +1,9 @@
+version: 0.1
+phases:
+  build:
+    commands:
+
+      - aws cloudformation package --template-file create-sns.yml --region ap-south-1 --output-template-file create-sns-ap-south-1.yml --s3-bucket karan-2021
+artifacts:
+    files:
+      - create-sns-ap-south-1.yml
